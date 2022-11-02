@@ -11,7 +11,7 @@ spec:
       version: 0.6.0
       sourceRef:
         kind: HelmRepository
-        name: apache_solr
+        name: apache-solr
         namespace: ${releaseNamespace}
   interval: 15s
   install:
