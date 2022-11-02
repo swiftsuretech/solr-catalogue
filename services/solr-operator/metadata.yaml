@@ -1,7 +1,7 @@
-displayName: solr-operator
+displayName: Solr Operator
 description: The Solr Operator enables easy management of Solr resources within Kubernetes.
 category:
-  - SECOM Apps
+  - Secom Apps
 type: catalog
 scope:
   - PROJECT
