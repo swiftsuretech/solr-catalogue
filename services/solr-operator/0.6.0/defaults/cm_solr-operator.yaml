@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: elastic-es-default-es-config
+  name: solr-config
   namespace: ${releaseNamespace}
 data:
   values.yaml: |-
@@ -33,7 +33,7 @@ data:
       # By default we do not install the CRDs.
       # Otherwise the ZookeeperCluster CRD will be deleted when deleting the Solr Operator helm chart release.
       crd:
-        create: true
+        create: false
 
     # A comma-separated list of namespaces that the operator should watch.
     # If empty, the solr operator will watch all namespaces in the cluster.
