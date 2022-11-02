@@ -2,7 +2,7 @@
 apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: HelmRepository
 metadata:
-  name: Apache_Solr
+  name: apache_solr
   namespace: ${workspaceNamespace}
   labels:
     kommander.d2iq.io/dkp-airgapped: unsupported
