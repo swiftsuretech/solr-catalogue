@@ -28,12 +28,12 @@ data:
       # Use the zookeeper-operator to provide zookeeper clusters for solr.
       # This setting will not install the zookeeper-operator helm chart as a dependency, you must use "zookeeper-operator.install" instead.
       # If "zookeeper-operator.install" = true, then this setting is ignored.
-      use: false
+      use: true
 
       # By default we do not install the CRDs.
       # Otherwise the ZookeeperCluster CRD will be deleted when deleting the Solr Operator helm chart release.
       crd:
-        create: false
+        create: true
 
     # A comma-separated list of namespaces that the operator should watch.
     # If empty, the solr operator will watch all namespaces in the cluster.
